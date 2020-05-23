@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="home" >
       {users.map(user => (
-        <Card style={{ width: '18rem' }} key={user.id}>
+        <Card style={{ width: '16rem' }} key={user.id}>
           <Card.Img variant='top' src={user.avatar_url} />
           <Card.Body>
             <Card.Title>{user.login}</Card.Title>
