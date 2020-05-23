@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">GitHub</Navbar.Brand>
+        <Navbar.Brand href="https://github.com/" target="_blank">GitHub</Navbar.Brand>
         <Nav className="mr-auto">
           <NavLink>
             <Link to="/">Home</Link>
@@ -33,6 +33,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/team" component={Team} />
         <Route path="/user/:name" component={Profile} />
       </Switch>
 
